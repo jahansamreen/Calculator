@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    /* The linear-gradient() CSS function creates an image consisting of a progressive transition between two or more colors along a straight line. */
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    width: 25%;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.5);
+}
+
+.display{
+    width: 100%;
+    background: black;
+    color: white;
+    height: 20vh;
+    text-align: right;
+}
+
+.input{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button{
+    border: none;
+    background-color: white;
+    padding: 1.5rem;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    font-weight: bold;
+}
+
+.query{
+    font-size: 28px;
+    padding: 25px;
+}
+
+.result{
+    font-size: 18px;
+    padding: 22px;
+}
+
+@keyframes big{
+    0%{
+        font-size: 18px;
+    }
+    100%{
+        font-size: 30px;
+    }
+}
+
+@keyframes small{
+    0%{
+        font-size: 28px;
+    }
+    100%{
+        font-size: 18px;
+    }
+}
